@@ -454,7 +454,7 @@ div.gallery img {
   }
 
   .gallery-container {
-    top: 500px;
+    top: 400px; /* Reduced from 500px to 400px */
     width: 95%;
     margin-top: 0;
   }
@@ -487,7 +487,7 @@ div.gallery img {
   }
 
   .gallery-container {
-    top: 500px;
+    top: 400px; /* Reduced from 500px to 400px */
     width: 100%;
     margin-top: 0;
   }
