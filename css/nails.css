@@ -426,7 +426,7 @@ div.gallery img {
 
 @media screen and (max-width: 768px) {
   .gallery-container {
-    top: 400px;
+    top: 450px; /* Increased from 420px to 450px */
     width: 95%;
   }
   
@@ -442,7 +442,7 @@ div.gallery img {
 
 @media screen and (max-width: 480px) {
   .gallery-container {
-    top: 400px;
+    top: 450px; /* Increased from 420px to 450px */
     width: 100%;
   }
   
