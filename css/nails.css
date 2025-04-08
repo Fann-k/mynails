@@ -453,8 +453,8 @@ div.gallery img {
     flex-shrink: 0;
   }
 
-  body .gallery-container {
-    top: 350px !important; /* Force override for mobile only */
+  .gallery-container {
+    top: 400px;
     width: 95%;
     margin-top: 0;
   }
@@ -486,8 +486,8 @@ div.gallery img {
     flex-shrink: 0;
   }
 
-  body .gallery-container {
-    top: 350px !important; /* Force override for mobile only */
+  .gallery-container {
+    top: 400px;
     width: 100%;
     margin-top: 0;
   }
