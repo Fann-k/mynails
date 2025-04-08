@@ -471,20 +471,6 @@ div.gallery img {
   .maintext {
     top: 480px;
   }
-
-  /* About page specific styles */
-  body.about-page h1 {
-    top: 300px !important;
-    margin-bottom: 120px !important;
-    font-size: 18px !important;
-    line-height: 1.5 !important;
-    width: 90% !important;
-  }
-
-  body.about-page .maintext {
-    top: 750px !important;
-    width: 90% !important;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -521,20 +507,6 @@ div.gallery img {
   
   .maintext {
     top: 500px;
-  }
-
-  /* About page specific styles */
-  body.about-page h1 {
-    top: 280px !important;
-    margin-bottom: 150px !important;
-    font-size: 16px !important;
-    line-height: 1.5 !important;
-    width: 90% !important;
-  }
-
-  body.about-page .maintext {
-    top: 800px !important;
-    width: 90% !important;
   }
 }
 
