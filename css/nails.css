@@ -425,9 +425,15 @@ div.gallery img {
 }
 
 @media screen and (max-width: 768px) {
+  .nav-container {
+    top: 320px;
+    padding: 8px 15px;
+  }
+
   .gallery-container {
-    top: 450px; /* Increased from 420px to 450px */
+    top: 380px;
     width: 95%;
+    margin-top: 20px;
   }
   
   div.gallery {
@@ -441,9 +447,15 @@ div.gallery img {
 }
 
 @media screen and (max-width: 480px) {
+  .nav-container {
+    top: 320px;
+    padding: 6px 12px;
+  }
+
   .gallery-container {
-    top: 450px; /* Increased from 420px to 450px */
+    top: 380px;
     width: 100%;
+    margin-top: 20px;
   }
   
   div.gallery {
