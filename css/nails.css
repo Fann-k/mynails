@@ -94,19 +94,30 @@ h3{
 
 
 
-.nav-container { /*aliyah*/
-position: absolute;
-top: 320px;
-left: 50%;
-transform: translate(-50%);
-padding: 10px 20px;
-background-color: rgb(208, 225, 245);
-color:rgb(208, 225, 245);
-text-decoration: none;
-border-radius: 5px;
-pointer-events: auto;
+.nav-container {
+  position: absolute;
+  top: 320px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px 20px;
+  background-color: rgb(208, 225, 245);
+  color: rgb(208, 225, 245);
+  text-decoration: none;
+  border-radius: 5px;
+  pointer-events: auto;
+  font-size: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
 
-font-size: 30;
+.nav-container h3 {
+  display: inline-block;
+  position: relative;
+  margin-right: 25px;
+  margin-left: 25px;
+  white-space: nowrap;
 }
 
 .nav-container:hover {
@@ -426,12 +437,21 @@ div.gallery img {
 
 @media screen and (max-width: 768px) {
   .nav-container {
-    top: 320px;
     padding: 8px 15px;
+    width: auto;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-container h3 {
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 16px;
   }
 
   .gallery-container {
-    top: 500px; /* Increased to ensure it's below the nav bar */
+    top: 500px;
     width: 95%;
     margin-top: 0;
   }
@@ -448,12 +468,21 @@ div.gallery img {
 
 @media screen and (max-width: 480px) {
   .nav-container {
-    top: 320px;
     padding: 6px 12px;
+    width: auto;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-container h3 {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 14px;
   }
 
   .gallery-container {
-    top: 500px; /* Increased to ensure it's below the nav bar */
+    top: 500px;
     width: 100%;
     margin-top: 0;
   }
