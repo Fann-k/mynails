@@ -453,12 +453,10 @@ div.gallery img {
     flex-shrink: 0;
   }
 
-  .gallery-container {
-    position: relative;
-    top: 60px; /* Position relative to nav bar */
+  body .gallery-container {
+    top: 350px !important; /* Force override for mobile only */
     width: 95%;
     margin-top: 0;
-    margin-bottom: 20px;
   }
   
   div.gallery {
@@ -488,12 +486,10 @@ div.gallery img {
     flex-shrink: 0;
   }
 
-  .gallery-container {
-    position: relative;
-    top: 60px; /* Position relative to nav bar */
+  body .gallery-container {
+    top: 350px !important; /* Force override for mobile only */
     width: 100%;
     margin-top: 0;
-    margin-bottom: 20px;
   }
   
   div.gallery {
