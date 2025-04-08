@@ -431,9 +431,9 @@ div.gallery img {
   }
 
   .gallery-container {
-    top: 380px;
+    top: 420px; /* Positioned below nav bar (320px + nav height + padding) */
     width: 95%;
-    margin-top: 20px;
+    margin-top: 0;
   }
   
   div.gallery {
@@ -453,9 +453,9 @@ div.gallery img {
   }
 
   .gallery-container {
-    top: 380px;
+    top: 420px; /* Positioned below nav bar (320px + nav height + padding) */
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0;
   }
   
   div.gallery {
