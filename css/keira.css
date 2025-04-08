@@ -1,0 +1,104 @@
+/* this is how to make a comment in css*/
+	/* this is how you can make the same line on every page have the same attributes, like a paragraph style for the headers or something, putting css stuff inside a header or something is called iinternal css*/
+		
+	
+@font-face {
+
+	font-family: 'Apropal-Bold';
+	src: url('/fonts/Apropal-Bold.woff') format('woff');	
+	font-weight: normal;
+	font-style: normal;	
+}
+	
+	
+h1 {
+	
+	font-family: "Apropal-Bold";
+	font-size: 200%;	
+}
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+	h1{
+		font-size: 6rem;
+	}
+}
+
+		
+
+		h1 {
+			    
+			text-align: center;
+		}
+		
+		h1{ 
+			text-shadow: aliceblue;
+			text-shadow: 1.25rem;
+			padding-bottom: 3%;
+		}
+/* * on its own is background colour*/
+
+		*{
+
+			background-color:thistle;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+
+		}
+
+
+*{
+ scroll-behavior: smooth; 
+}
+
+
+div.relative {
+
+    position: relative;
+    border: 1px solid blue;
+
+}
+
+div.absolute {
+
+    position: absolute;
+    right: 0px;
+    height: 200px;
+    width: 200px;
+    border: 4px solid red;
+
+}
+
+div.absolute {
+
+    position: aboslute;
+    
+}
+
+img {
+	width: 100%;
+	height: auto;
+	margin-top: 20%;
+	position: absolute;
+}
+
+button {
+	position: absolute;
+	top: 10%;
+	right: 5%;
+	border-radius: 1rem;
+	padding: 5px;
+	background-color: red;
+}
+
+
+

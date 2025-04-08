@@ -1,0 +1,366 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(255, 253, 246);
+    padding-bottom: 1000px; /* Reduced from 2000px to 1000px */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%; /* Ensure body takes full width */
+    margin: 0; /* Remove default margins */
+    position: relative; /* Add this to contain absolute positioned elements */
+}
+
+
+*{
+  margin: 0;
+
+}
+
+
+
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(208, 225, 245);
+  overflow-x: hidden;
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.bottom-container {
+  position: fixed;
+  width: 100%;
+  height: 37.5px;
+  background-color: rgb(208, 225, 245);
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  opacity: 0; /* Start invisible */
+  transition: opacity 0.3s ease; /* Smooth fade in/out */
+  pointer-events: none; /* Prevent interaction when invisible */
+}
+
+/* Show bottom container when near bottom of page */
+.bottom-container.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+  
+p {
+    color: rgb(65, 68, 198);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    position: absolute;
+  }
+p.text{
+  font-size: 40px;
+  margin-top: 60px;;
+}
+/*M*/
+
+h1 {
+  font-size: 20px;
+  font-weight: lighter;
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(65, 68, 198);
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+}
+
+h3{
+  display: inline-block;
+  position: relative;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+
+
+
+
+.nav-container { /*aliyah*/
+position: absolute;
+top: 320px;
+left: 50%;
+transform: translate(-50%);
+padding: 10px 20px;
+background-color: rgb(208, 225, 245);
+color:rgb(208, 225, 245);
+text-decoration: none;
+border-radius: 5px;
+pointer-events: auto;
+
+font-size: 30;
+}
+
+.nav-container:hover {
+
+  background-color: rgb(170, 201, 237);
+  cursor: pointer;
+
+}
+
+
+.maintext {
+  font-size: 20px;
+  font-weight: lighter;
+  color: rgb(65, 68, 198);
+  position: absolute;
+  top: 450px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+}
+  
+
+.kitty {
+  position: absolute;
+  top: 680px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step1 img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Add media queries for kitty in prep page */
+@media screen and (max-width: 1200px) {
+  .step1 img {
+    width: 100%; /* Changed from 100vw to 100% */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .kitty {
+    top: 880px;
+  }
+  .step1 img {
+    width: 100%; /* Changed from 100vw to 100% */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .kitty {
+    top: 980px;
+  }
+  .step1 img {
+    width: 100%; /* Changed from 100vw to 100% */
+  }
+}
+
+.kittyrow {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 100%;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Update media queries for different screen sizes */
+@media screen and (max-width: 1200px) {
+  .column img {
+    width: 100%; /* Changed from 100vw to 100% */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .kittyrow {
+    flex-direction: column;
+    gap: 15px; /* Reduced from 3vw to fixed 15px */
+    top: 420px;
+  }
+  .column img {
+    width: 100%; /* Changed from 100vw to 100% */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .kittyrow {
+    flex-direction: column;
+    gap: 10px; /* Reduced from 2vw to fixed 10px */
+    top: 420px;
+  }
+  .column img {
+    width: 100%; /* Changed from 100vw to 100% */
+  }
+}
+
+.maintext2 {
+  font-size: 20px;
+  font-weight: lighter;
+  color: rgb(65, 68, 198);
+  position: absolute;
+  top: 480px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+}
+
+
+
+.maintext3 {
+  font-size: 20px;
+  font-weight: lighter;
+  color: rgb(65, 68, 198);
+  position: absolute;
+  top: 520px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+}
+
+.all1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 580px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px;
+}
+
+.all1 img {
+  width: 80%; /* Changed from 50vw to 80% */
+  max-width: 600px; /* Add max-width to prevent image from being too large */
+  height: auto;
+  object-fit: contain;
+}
+
+.all2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 730px; /* Changed from 700px to 730px */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.all2 img {
+  width: 80%; /* Changed from 25vw to 80% */
+  max-width: 300px; /* Add max-width to prevent image from being too large */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Add media queries for different screen sizes */
+@media screen and (max-width: 1200px) {
+  .all2 img {
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .all2 img {
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .all2 img {
+    width: 25vw;
+  }
+}
+
+h2, h4 {
+  font-size: 20px;
+  font-weight: lighter;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(65, 68, 198);
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+}
+
+h2 {
+  top: 680px; /* Changed from 650px to 680px to be right under the image */
+}
+
+h4 {
+  top: 1750px;
+}
+
+.maintext4 {
+  font-size: 20px;
+  font-weight: lighter;
+  color: rgb(65, 68, 198);
+  position: absolute;
+  top: 830px; /* Changed from 800px to 830px */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+}
+
+.maintext5 {
+  font-size: 20px;
+  font-weight: lighter;
+  color: rgb(65, 68, 198);
+  position: absolute;
+  top: 1030px; /* Changed from 1000px to 1030px */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+}

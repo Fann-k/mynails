@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!--this is bread-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Base</title>
+	<link rel="stylesheet" href="css/nails.css" >
+
+
+</head>
+
+<body>
+  
+   
+      
+
+      <div class="container">
+        <p class="text">INSPO</p>
+      </div>
+      
+      <nav class="nav-container">
+        <h3> <a href="index.html">HOME</a> </h3>
+        <h3> <a href="prep.html">PREP</a></h3> 
+        <h3>  <a href="base.html">INSPO</a></h3>
+        <h3> <a href="about.html">ABOUT</a> </h3>
+        </nav>
+        
+
+<div class="step1">
+      <img src="images/Pixel_pink__pink_Hello_Kitty_art_transparent_background_PNG_clipart-removebg-preview.png" />
+</div>
+
+
+
+
+<h1>These are some designs for inspiration on how to paint your nails</h1>
+<div class="image-gallery">
+  <img src="images/nails3.jpg" alt="f1">
+  <img src="images/nails2.jpg" alt="f2">
+  <img src="images/nails1.jpg" alt="f3">
+  <img src="https://via.placeholder.com/300x200" alt="Placeholder 4">
+  <img src="https://via.placeholder.com/300x200" alt="Placeholder 5">
+  <img src="https://via.placeholder.com/300x200" alt="Placeholder 6">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bottom-container"></div>
+
+<script>
+  const bottomContainer = document.querySelector('.bottom-container');
+  
+  window.addEventListener('scroll', () => {
+    // Show container only when user reaches the very bottom of the page
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 1) {
+      bottomContainer.classList.add('visible');
+    } else {
+      bottomContainer.classList.remove('visible');
+    }
+  });
+</script>
+
+</body>
+</html>
