@@ -81,7 +81,7 @@ h1 {
   text-align: center;
   width: 80%;
   max-width: 800px;
-  z-index: 1;
+  z-index: 3;
 }
 
 h3{
@@ -112,6 +112,7 @@ h3{
   align-items: center;
   flex-wrap: nowrap;
   white-space: nowrap;
+  z-index: 2;
 }
 
 .nav-container h3 {
@@ -141,7 +142,7 @@ h3{
   text-align: center;
   width: 80%;
   max-width: 800px;
-  z-index: 1;
+  z-index: 3;
 }
   
 
