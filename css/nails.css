@@ -454,9 +454,11 @@ div.gallery img {
   }
 
   .gallery-container {
-    top: 380px; /* Adjusted for mobile only */
+    position: relative;
+    top: 60px; /* Position relative to nav bar */
     width: 95%;
     margin-top: 0;
+    margin-bottom: 20px;
   }
   
   div.gallery {
@@ -487,9 +489,11 @@ div.gallery img {
   }
 
   .gallery-container {
-    top: 380px; /* Adjusted for mobile only */
+    position: relative;
+    top: 60px; /* Position relative to nav bar */
     width: 100%;
     margin-top: 0;
+    margin-bottom: 20px;
   }
   
   div.gallery {
