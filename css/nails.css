@@ -475,10 +475,11 @@ div.gallery img {
   /* About page specific styles */
   body:has(h1:contains("Hello my name is Keira")) h1 {
     top: 380px;
+    margin-bottom: 40px;
   }
 
   body:has(h1:contains("Hello my name is Keira")) .maintext {
-    top: 520px;
+    top: 580px;
   }
 }
 
@@ -521,10 +522,11 @@ div.gallery img {
   /* About page specific styles */
   body:has(h1:contains("Hello my name is Keira")) h1 {
     top: 360px;
+    margin-bottom: 60px;
   }
 
   body:has(h1:contains("Hello my name is Keira")) .maintext {
-    top: 540px;
+    top: 620px;
   }
 }
 
