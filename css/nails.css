@@ -469,7 +469,16 @@ div.gallery img {
   }
   
   .maintext {
-    top: 480px; /* Moved down from 450px to 480px */
+    top: 480px;
+  }
+
+  /* About page specific styles */
+  body:has(h1:contains("Hello my name is Keira")) h1 {
+    top: 380px;
+  }
+
+  body:has(h1:contains("Hello my name is Keira")) .maintext {
+    top: 520px;
   }
 }
 
@@ -506,7 +515,16 @@ div.gallery img {
   }
   
   .maintext {
-    top: 500px; /* Moved down from 450px to 500px */
+    top: 500px;
+  }
+
+  /* About page specific styles */
+  body:has(h1:contains("Hello my name is Keira")) h1 {
+    top: 360px;
+  }
+
+  body:has(h1:contains("Hello my name is Keira")) .maintext {
+    top: 540px;
   }
 }
 
