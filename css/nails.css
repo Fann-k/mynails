@@ -149,8 +149,8 @@ font-size: 30;
 }
 
 .step1 img {
-  width: 100%;
-  height: auto;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
 }
 
@@ -276,9 +276,8 @@ font-size: 30;
 }
 
 .all1 img {
-  width: 80%; /* Changed from 50vw to 80% */
-  max-width: 600px; /* Add max-width to prevent image from being too large */
-  height: auto;
+  width: 400px;
+  height: 300px;
   object-fit: contain;
 }
 
@@ -294,9 +293,8 @@ font-size: 30;
 }
 
 .all2 img {
-  width: 80%; /* Changed from 25vw to 80% */
-  max-width: 300px; /* Add max-width to prevent image from being too large */
-  height: auto;
+  width: 300px;
+  height: 300px;
   object-fit: contain;
 }
 
@@ -364,3 +362,95 @@ h4 {
   width: 80%;
   max-width: 800px;
 }
+
+
+div.gallery {
+  margin: 0;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+
+div.gallery img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+div.desc {
+  padding: 5px;
+  text-align: center;
+}
+
+/* Update gallery container styles */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+  margin-top: 20px;
+  padding: 0;
+  position: absolute;
+  top: 380px; /* Positioned just below the nav bar (320px + some padding) */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+/* Standardize all images */
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+
+/* Update gallery styles */
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+div.gallery img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+  img, div.gallery img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  img, div.gallery img {
+    width: 200px;
+    height: 200px;
+  }
+}
+ 
+
+@media screen and (max-width: 480px) {
+  img, div.gallery img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+
+
+
+
+
