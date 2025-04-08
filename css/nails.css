@@ -4,7 +4,7 @@ html {
 
 body {
     background-color: rgb(255, 253, 246);
-    padding-bottom: 1000px; /* Reduced from 2000px to 1000px */
+    padding-bottom: 1000px; /* Increased from 800px to 1000px */
     overflow-x: hidden; /* Prevent horizontal scrolling */
     width: 100%; /* Ensure body takes full width */
     margin: 0; /* Remove default margins */
@@ -364,11 +364,7 @@ h4 {
 }
 
 
-div.gallery {
-  margin: 0;
-  border: 1px solid #ccc;
-  width: 300px;
-}
+
 
 div.gallery img {
   width: 300px;
@@ -386,37 +382,23 @@ div.desc {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0;
-  margin-top: 20px;
+  gap: 5px;
+  margin-top: 0;
   padding: 0;
   position: absolute;
-  top: 380px; /* Positioned just below the nav bar (320px + some padding) */
+  top: 400px; /* Increased from 380px to 400px to add more space below nav */
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+  padding-bottom: 100px;
 }
 
-/* Standardize all images */
-img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-}
-
-
-
-
-
+/* Remove duplicate gallery styles */
 /* Update gallery styles */
 div.gallery {
-  margin: 5px;
+  margin: 0;
   border: 1px solid #ccc;
-  float: left;
   width: 300px;
-  margin-top: 50px;
-  margin-bottom: 100px;
 }
 
 div.gallery img {
@@ -427,24 +409,50 @@ div.gallery img {
 
 /* Responsive adjustments */
 @media screen and (max-width: 1200px) {
-  img, div.gallery img {
-    width: 250px;
-    height: 250px;
+  .gallery-container {
+    top: 400px;
+    width: 90%;
+  }
+  
+  div.gallery {
+    width: 300px;
+  }
+  
+  div.gallery img {
+    width: 300px;
+    height: 300px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  img, div.gallery img {
-    width: 200px;
-    height: 200px;
+  .gallery-container {
+    top: 400px;
+    width: 95%;
+  }
+  
+  div.gallery {
+    width: 300px;
+  }
+  
+  div.gallery img {
+    width: 300px;
+    height: 300px;
   }
 }
- 
 
 @media screen and (max-width: 480px) {
-  img, div.gallery img {
-    width: 150px;
-    height: 150px;
+  .gallery-container {
+    top: 400px;
+    width: 100%;
+  }
+  
+  div.gallery {
+    width: 300px;
+  }
+  
+  div.gallery img {
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -454,3 +462,88 @@ div.gallery img {
 
 
 
+
+
+
+
+
+
+
+
+
+/*
+.carousel {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.carousel-images {
+  display: flex;
+  width: 800%; /* 3 images 
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-nav {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-nav label {
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Slide control logic 
+
+#img1:checked ~ .carousel-images {
+  transform: translateX(0%);
+}
+#img2:checked ~ .carousel-images {
+  transform: translateX(-100%);
+}
+#img3:checked ~ .carousel-images {
+  transform: translateX(-200%);
+}
+
+#img4:checked ~ .carousel-images {
+  transform: translateX(-200%);
+}
+#img5:checked ~ .carousel-images {
+  transform: translateX(-200%);
+}
+
+#img6:checked ~ .carousel-images {
+  transform: translateX(-200%);
+}
+
+#img7:checked ~ .carousel-images {
+  transform: translateX(-200%);
+}
+
+
+#img8:checked ~ .carousel-images {
+  transform: translateX(-200%);
+}
+*/
