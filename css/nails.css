@@ -9,12 +9,12 @@ body {
     width: 100%; /* Ensure body takes full width */
     margin: 0; /* Remove default margins */
     position: relative; /* Add this to contain absolute positioned elements */
-    --s: 55px; /* control the size*/
+    /*--s: 55px; /* control the size
     --c1: #ffffff;
     --c2: #f2dcff;
     --c3: #ffd8e1;
     
-    --b: calc(var(--s)/3.67); /* control the thickness of the curved lines */
+    --b: calc(var(--s)/3.67); /* control the thickness of the curved lines 
     
     --_r: calc(1.28*var(--s) + var(--b)/2) at top 50%;
     --_f: calc(99.5% - var(--b)),var(--c1) calc(101% - var(--b)) 99.5%,#0000 101%;
@@ -48,12 +48,12 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;/* Include padding and border in width calculation */
 
-    --s: 55px; /* control the size*/
+    /*--s: 55px; /* control the size*
     --c1: #ffffff;
     --c2: #f2dcff;
     --c3: #ffd8e1;
     
-    --b: calc(var(--s)/3.67); /* control the thickness of the curved lines */
+    --b: calc(var(--s)/3.67); /* control the thickness of the curved lines *
     
     --_r: calc(1.28*var(--s) + var(--b)/2) at top 50%;
     --_f: calc(99.5% - var(--b)),var(--c1) calc(101% - var(--b)) 99.5%,#0000 101%;
