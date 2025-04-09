@@ -39,6 +39,125 @@ body {
 
 
 
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background:rgb(255, 253, 246);
+  overflow: hidden;
+}
+
+.ball {
+  position: absolute;
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 50%;
+  /*backface-visibility: hidden;*/
+  animation: move linear infinite;
+}
+
+/*.ball:nth-child(odd) {
+    color: #006D5B;
+}
+
+.ball:nth-child(even) {
+    color: #FF6F61;
+}*/
+
+/* Using a custom attribute for variability */ /*https://prismic.io/blog/css-background-effects*/
+.ball:nth-child(1) {
+  top: 77%;
+  left: 70%;
+  animation-duration: 10s;
+  animation-delay: -3s;
+  transform-origin: 4vw 0vh;
+  box-shadow: 40vmin 0 5.703076368487546vmin currentColor;
+  color: rgb(206, 245, 207);
+}
+
+.ball:nth-child(9) {
+  top: 77%;
+  left: 16%;
+  animation-duration: 31s;
+  animation-delay: -3s;
+  transform-origin: 4vw 0vh;
+  box-shadow: 40vmin 0 5.178483653434181vmin currentColor;
+  color: rgb(87, 110, 255);
+}
+
+.ball:nth-child(2) {
+  top: 42%;
+  left: 2%;
+  animation-duration: 53s;
+  animation-delay: -3s;
+  transform-origin: 4vw 0vh;
+  box-shadow: -40vmin 0 5.17594621519026vmin currentColor;
+  color: rgb(255, 195, 195);
+}
+.ball:nth-child(3) {
+  top: 28%;
+  left: 18%;
+  animation-duration: 49s;
+  animation-delay: -3s;
+  transform-origin: 4vw 0vh;
+  box-shadow: 40vmin 0 5.248179047256236vmin currentColor;
+  color: rgba(212, 69, 69, 0.807);
+}
+.ball:nth-child(4) {
+  top: 25%;
+  left: 30%;
+  animation-duration: 26s;
+  animation-delay: -3s;
+  transform-origin: 4vw 0vh;
+  box-shadow: 40vmin 0 5.279749632220298vmin currentColor;
+  color: rgb(236, 195, 255);
+}
+.ball:nth-child(5) {
+  top: 77%;
+  left: 70%;
+  animation-duration: 10s;
+  animation-delay: -3s;
+  transform-origin: 4vw 0vh;
+  box-shadow: 40vmin 0 5.703076368487546vmin currentColor;
+  color: rgb(237, 63, 153);
+}
+.ball:nth-child(6) {
+  top: 77%;
+  left: 16%;
+  animation-duration: 31s;
+  animation-delay: -3s;
+  transform-origin: 4vw 0vh;
+  box-shadow: 40vmin 0 5.178483653434181vmin currentColor;
+  color: rgb(255, 139, 100);
+}
+.ball:nth-child(7) {
+  top: 40%;
+  left: 25%;
+  animation-duration: 55s;
+  animation-delay: -3s;
+  transform-origin: 4vw 0vh;
+  box-shadow: -40vmin 0 5.703026794398318vmin currentColor;
+  color: rgb(87, 110, 255);
+}
+.ball:nth-child(8) {
+  top: 41%;
+  left: 47%;
+  animation-duration: 43s;
+  animation-delay: -3s;
+  transform-origin: 4vw 0vh;
+  box-shadow: 40vmin 0 5.196265905749415vmin currentColor;
+  color: rgb(255, 225, 214);
+}
+
+
 
 .container {
   position: absolute;
@@ -68,6 +187,114 @@ body {
       linear-gradient(90deg,var(--c2) 50%,var(--c3) 0);
     background-size: var(--_s) calc(4*var(--s));
     /*Temani Afif https://css-pattern.com/citrus-shapes/ */
+    
+    @keyframes move {
+      100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+      }
+    }
+    
+    .background {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background:rgb(255, 253, 246);
+      overflow: hidden;
+    }
+    
+    .ball {
+      position: absolute;
+      width: 20vmin;
+      height: 20vmin;
+      border-radius: 50%;
+      /*backface-visibility: hidden;*/
+      animation: move linear infinite;
+    }
+    
+    /*.ball:nth-child(odd) {
+        color: #006D5B;
+    }
+    
+    .ball:nth-child(even) {
+        color: #FF6F61;
+    }*/
+    
+    /* Using a custom attribute for variability */ /*https://prismic.io/blog/css-background-effects*/
+    .ball:nth-child(1) {
+      top: 77%;
+      left: 88%;
+      animation-duration: 40s;
+      animation-delay: -3s;
+      transform-origin: 16vw -2vh;
+      box-shadow: 40vmin 0 5.703076368487546vmin currentColor;
+      color: rgb(206, 245, 207);
+    }
+    .ball:nth-child(2) {
+      top: 42%;
+      left: 2%;
+      animation-duration: 53s;
+      animation-delay: -3s;
+      transform-origin: -19vw 21vh;
+      box-shadow: -40vmin 0 5.17594621519026vmin currentColor;
+      color: rgb(255, 195, 195);
+    }
+    .ball:nth-child(3) {
+      top: 28%;
+      left: 18%;
+      animation-duration: 49s;
+      animation-delay: -3s;
+      transform-origin: -22vw 3vh;
+      box-shadow: 40vmin 0 5.248179047256236vmin currentColor;
+      color: rgba(212, 69, 69, 0.807);
+    }
+    .ball:nth-child(4) {
+      top: 50%;
+      left: 79%;
+      animation-duration: 26s;
+      animation-delay: -3s;
+      transform-origin: -17vw -6vh;
+      box-shadow: 40vmin 0 5.279749632220298vmin currentColor;
+      color: rgb(236, 195, 255);
+    }
+    .ball:nth-child(5) {
+      top: 46%;
+      left: 15%;
+      animation-duration: 36s;
+      animation-delay: -3s;
+      transform-origin: 4vw 0vh;
+      box-shadow: -40vmin 0 5.964309466052033vmin currentColor;
+      color: rgb(237, 63, 153);
+    }
+    .ball:nth-child(6) {
+      top: 77%;
+      left: 16%;
+      animation-duration: 31s;
+      animation-delay: -3s;
+      transform-origin: 18vw 4vh;
+      box-shadow: 40vmin 0 5.178483653434181vmin currentColor;
+      color: rgb(255, 139, 100);
+    }
+    .ball:nth-child(7) {
+      top: 22%;
+      left: 17%;
+      animation-duration: 55s;
+      animation-delay: -3s;
+      transform-origin: 1vw -23vh;
+      box-shadow: -40vmin 0 5.703026794398318vmin currentColor;
+      color: rgb(87, 110, 255);
+    }
+    .ball:nth-child(8) {
+      top: 41%;
+      left: 47%;
+      animation-duration: 43s;
+      animation-delay: -3s;
+      transform-origin: 25vw -3vh;
+      box-shadow: 40vmin 0 5.196265905749415vmin currentColor;
+      color: rgb(255, 225, 214);
+    }
+    
   }
 
 
@@ -442,18 +669,50 @@ div.gallery img {
 div.desc1 {
   padding: 5px;
   text-align: center;
-  background-color: aqua;
+  background-color: rgb(206, 245, 207);
 }
 
 div.desc2 {
   padding: 5px;
   text-align: center;
-  background-color: rgb(255, 0, 242);
+  background-color: rgb(255, 195, 195);
+}
+
+div.desc3 {
+  padding: 5px;
+  text-align: center;
+  background-color: rgba(212, 69, 69, 0.807);
 }
 
 
+div.desc4 {
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(236, 195, 255);
+}
 
+div.desc5 {
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(237, 63, 153);
+}
+div.desc6 {
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(255, 139, 100);
+}
 
+div.desc7 {
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(87, 110, 255);
+}
+
+div.desc8 {
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(255, 225, 214);
+}
 
 
 
