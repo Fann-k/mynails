@@ -39,123 +39,11 @@ body {
 
 
 
-@keyframes move {
-  100% {
-    transform: translate3d(0, 0, 1px) rotate(360deg);
-  }
-}
 
-.background {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background:rgb(255, 253, 246);
-  overflow: hidden;
-}
 
-.ball {
-  position: absolute;
-  width: 20vmin;
-  height: 20vmin;
-  border-radius: 50%;
-  /*backface-visibility: hidden;*/
-  animation: move linear infinite;
-}
 
-/*.ball:nth-child(odd) {
-    color: #006D5B;
-}
 
-.ball:nth-child(even) {
-    color: #FF6F61;
-}*/
 
-/* Using a custom attribute for variability */ /*https://prismic.io/blog/css-background-effects*/
-.ball:nth-child(1) {
-  top: 77%;
-  left: 70%;
-  animation-duration: 10s;
-  animation-delay: -3s;
-  transform-origin: 4vw 0vh;
-  box-shadow: 40vmin 0 5.703076368487546vmin currentColor;
-  color: rgb(206, 245, 207);
-}
-
-.ball:nth-child(9) {
-  top: 77%;
-  left: 16%;
-  animation-duration: 31s;
-  animation-delay: -3s;
-  transform-origin: 4vw 0vh;
-  box-shadow: 40vmin 0 5.178483653434181vmin currentColor;
-  color: rgb(87, 110, 255);
-}
-
-.ball:nth-child(2) {
-  top: 42%;
-  left: 2%;
-  animation-duration: 53s;
-  animation-delay: -3s;
-  transform-origin: 4vw 0vh;
-  box-shadow: -40vmin 0 5.17594621519026vmin currentColor;
-  color: rgb(255, 195, 195);
-}
-.ball:nth-child(3) {
-  top: 28%;
-  left: 18%;
-  animation-duration: 49s;
-  animation-delay: -3s;
-  transform-origin: 4vw 0vh;
-  box-shadow: 40vmin 0 5.248179047256236vmin currentColor;
-  color: rgba(212, 69, 69, 0.807);
-}
-.ball:nth-child(4) {
-  top: 25%;
-  left: 30%;
-  animation-duration: 26s;
-  animation-delay: -3s;
-  transform-origin: 4vw 0vh;
-  box-shadow: 40vmin 0 5.279749632220298vmin currentColor;
-  color: rgb(236, 195, 255);
-}
-.ball:nth-child(5) {
-  top: 77%;
-  left: 70%;
-  animation-duration: 10s;
-  animation-delay: -3s;
-  transform-origin: 4vw 0vh;
-  box-shadow: 40vmin 0 5.703076368487546vmin currentColor;
-  color: rgb(237, 63, 153);
-}
-.ball:nth-child(6) {
-  top: 77%;
-  left: 16%;
-  animation-duration: 31s;
-  animation-delay: -3s;
-  transform-origin: 4vw 0vh;
-  box-shadow: 40vmin 0 5.178483653434181vmin currentColor;
-  color: rgb(255, 139, 100);
-}
-.ball:nth-child(7) {
-  top: 40%;
-  left: 25%;
-  animation-duration: 55s;
-  animation-delay: -3s;
-  transform-origin: 4vw 0vh;
-  box-shadow: -40vmin 0 5.703026794398318vmin currentColor;
-  color: rgb(87, 110, 255);
-}
-.ball:nth-child(8) {
-  top: 41%;
-  left: 47%;
-  animation-duration: 43s;
-  animation-delay: -3s;
-  transform-origin: 4vw 0vh;
-  box-shadow: 40vmin 0 5.196265905749415vmin currentColor;
-  color: rgb(255, 225, 214);
-}
 
 
 
@@ -163,10 +51,22 @@ body {
   position: absolute;
   width: 100%;
   height: 300px;
-  background-color: rgb(208, 225, 245);
+  background-color: rgb(226, 165, 180);
   overflow-x: hidden;
   box-sizing: border-box;/* Include padding and border in width calculation */
 
+
+
+
+
+
+
+
+
+
+
+
+  
     /*--s: 55px; /* control the size*
     --c1: #ffffff;
     --c2: #f2dcff;
@@ -186,9 +86,9 @@ body {
       radial-gradient(var(--_r) left  var(--_g0)) calc(var(--_s)/ 2) var(--s),
       linear-gradient(90deg,var(--c2) 50%,var(--c3) 0);
     background-size: var(--_s) calc(4*var(--s));
-    /*Temani Afif https://css-pattern.com/citrus-shapes/ */
+    /*Temani Afif https://css-pattern.com/citrus-shapes/ 
     
-    @keyframes move {
+    /*@keyframes move {
       100% {
         transform: translate3d(0, 0, 1px) rotate(360deg);
       }
@@ -209,7 +109,7 @@ body {
       width: 20vmin;
       height: 20vmin;
       border-radius: 50%;
-      /*backface-visibility: hidden;*/
+      /*backface-visibility: hidden;
       animation: move linear infinite;
     }
     
@@ -219,9 +119,9 @@ body {
     
     .ball:nth-child(even) {
         color: #FF6F61;
-    }*/
+    }
     
-    /* Using a custom attribute for variability */ /*https://prismic.io/blog/css-background-effects*/
+    Using a custom attribute for variability */ /*https://prismic.io/blog/css-background-effects
     .ball:nth-child(1) {
       top: 77%;
       left: 88%;
@@ -293,9 +193,172 @@ body {
       transform-origin: 25vw -3vh;
       box-shadow: 40vmin 0 5.196265905749415vmin currentColor;
       color: rgb(255, 225, 214);
-    }
+    }*/
     
   }
+
+
+
+/*stupid container stuff*/
+
+
+
+
+
+.button-link:focus {
+  outline: 3px dotted #ffffffaa; /* semi-transparent white border */
+  outline-offset: 4px;
+  box-shadow: 0 0 0 5px #ff408144; /* glowing focus ring */
+}
+
+
+
+
+
+
+
+
+/*
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.area{
+    background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:100vh;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles i{
+    position: absolute;
+    display: block;
+    list-style: none;
+    color:#FFF;
+    font-size:1rem;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles i:nth-child(1){
+    left: 25%;
+    font-size:1.6rem;
+    animation-delay: 0s;
+}
+
+
+.circles i:nth-child(2){
+    left: 10%;
+    font-size:0.9rem;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles i:nth-child(3){
+    left: 70%;
+    font-size:1.1rem;
+    animation-delay: 4s;
+}
+
+.circles i:nth-child(4){
+    left: 40%;
+    font-size:1.3rem;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles i:nth-child(5){
+    left: 65%;
+    font-size:1rem;
+    animation-delay: 0s;
+}
+
+.circles i:nth-child(6){
+    left: 75%;
+    font-size:1.7rem;
+    animation-delay: 3s;
+}
+
+.circles i:nth-child(7){
+    left: 35%;
+    font-size:1.9rem;
+    animation-delay: 7s;
+}
+
+.circles i:nth-child(8){
+    left: 50%;
+    font-size:0.8rem;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles i:nth-child(9){
+    left: 20%;
+    font-size:0.6rem;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles i:nth-child(10){
+    left: 85%;
+    font-size:1.4rem;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}*/
+
 
 
 
