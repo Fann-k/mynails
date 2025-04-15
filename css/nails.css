@@ -496,9 +496,13 @@ h3{
   }
 
   .kitty-gif {
-    top: 500px; /* Position below maintext */
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
     max-width: 250px;
-    margin-bottom: 80px;
+    margin: 0;
+    z-index: 2;
   }
 }
 
@@ -512,9 +516,13 @@ h3{
   }
 
   .kitty-gif {
-    top: 500px; /* Position below maintext */
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
     max-width: 200px;
-    margin-bottom: 60px;
+    margin: 0;
+    z-index: 2;
   }
 }
 
