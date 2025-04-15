@@ -15,17 +15,26 @@
    
       
 
-      <div class="container">
-        <p class="text">PREP</p>
+      <div class="container2">
+        <p2 class="text">PREP</p2>
       </div>
       
 
   
-      <nav class="nav-container">
+      <nav class="nav-container2">
         <h3> <a href="index.html" class="button-link">HOME</a> </h3>
         <h3> <a href="prep.html" class="button-link">PREP</a></h3> 
         <h3>  <a href="base.html" class="button-link">INSPO</a></h3>
         </nav>
+
+
+
+
+
+
+
+
+
 
 
        <!---<div class="kittyrow">
@@ -51,24 +60,35 @@
 
 
 
-<div class="bottom-container"></div>
+<!--<div class="bottom-container2"></div>
 
 <script>
-  const bottomContainer = document.querySelector('.bottom-container');
+  const bottomContainer = document.querySelector('.bottom-container2');
+  let isVisible = false;
+  let scrollTimeout;
   
   window.addEventListener('scroll', () => {
-    // Show container only when user reaches the very bottom of the page
-    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 1) {
-      bottomContainer.classList.add('visible');
-    } else {
-      bottomContainer.classList.remove('visible');
-    }
+    clearTimeout(scrollTimeout);
+    
+    scrollTimeout = setTimeout(() => {
+      const scrollPosition = window.innerHeight + window.scrollY;
+      const documentHeight = document.body.offsetHeight;
+      const threshold = 100; // pixels from bottom to trigger the transition
+      
+      if (scrollPosition >= documentHeight - threshold && !isVisible) {
+        bottomContainer.classList.add('visible');
+        isVisible = true;
+      } else if (scrollPosition < documentHeight - threshold && isVisible) {
+        bottomContainer.classList.remove('visible');
+        isVisible = false;
+      }
+    }, 50); // Debounce time in milliseconds
   });
-</script>
+</script>-->
 
 
   
-<h1>
+<!--<h1>
   In this page I will be showing you how to prep and apply false nails. As well as what supplies you will need and why they are important.
 </h1>
 
@@ -111,8 +131,38 @@ The supplies and tools you will need are:
 
   <h4>
     STEP 2:
-  </h4>
+  </h4>-->
 
+<div class="bottom-container2"></div>
+
+<script>
+  const bottomContainer = document.querySelector('.bottom-container2');
+  let isVisible = false;
+  let scrollTimeout;
+  let lastScrollTop = 0;
+  
+  window.addEventListener('scroll', () => {
+    clearTimeout(scrollTimeout);
+    
+    scrollTimeout = setTimeout(() => {
+      const scrollPosition = window.innerHeight + window.scrollY;
+      const documentHeight = document.body.offsetHeight;
+      const threshold = 100; // pixels from bottom to trigger the transition
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      
+      // Check if scrolling down and near bottom
+      if (currentScroll > lastScrollTop && scrollPosition >= documentHeight - threshold) {
+        bottomContainer.classList.add('visible');
+        isVisible = true;
+      } else {
+        bottomContainer.classList.remove('visible');
+        isVisible = false;
+      }
+      
+      lastScrollTop = currentScroll;
+    }, 50); // Debounce time in milliseconds
+  });
+</script>
 
 </body>
 </html>
