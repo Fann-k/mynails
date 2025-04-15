@@ -488,16 +488,31 @@ h3{
 }
 
 @media screen and (max-width: 768px) {
+  .maintext {
+    top: 360px;
+    width: 90%;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
   .kitty-gif {
-    top: 460px;
+    top: 500px; /* Position below maintext */
     max-width: 250px;
     margin-bottom: 80px;
   }
 }
 
 @media screen and (max-width: 480px) {
+  .maintext {
+    top: 360px;
+    width: 90%;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+
   .kitty-gif {
-    top: 460px;
+    top: 500px; /* Position below maintext */
     max-width: 200px;
     margin-bottom: 60px;
   }
