@@ -662,7 +662,7 @@ h3{
   justify-content: center;
   align-items: center;
   width: 100%;
-  position: absolute;
+  position: relative;
   top: 580px;
   left: 50%;
   transform: translateX(-50%);
@@ -680,8 +680,8 @@ h3{
   justify-content: center;
   align-items: center;
   width: 100%;
-  position: absolute;
-  top: 730px; /* Changed from 700px to 730px */
+  position: relative;
+  top: 730px; /* Changed from 700px to 730px */ /*fix pixels/rems (br) no position w px*/
   left: 50%;
   transform: translateX(-50%);
 }
