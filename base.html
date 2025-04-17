@@ -33,6 +33,7 @@
         <h3> <a href="index.html" class="button-link">HOME</a> </h3>
         <h3> <a href="prep.html" class="button-link">PREP</a></h3> 
         <h3>  <a href="base.html"  class="button-link">INSPO</a></h3>
+        <h3>  <a href="faq.html" class="button-link">FAQ</a></h3>
         </nav>
         
 
@@ -118,12 +119,12 @@
       
       // Check if scrolling down and near bottom
       if (currentScroll > lastScrollTop && scrollPosition >= documentHeight - threshold) {
-        bottomContainer.classList.add('visible');
+      bottomContainer.classList.add('visible');
         isVisible = true;
-      } else {
-        bottomContainer.classList.remove('visible');
+    } else {
+      bottomContainer.classList.remove('visible');
         isVisible = false;
-      }
+    }
       
       lastScrollTop = currentScroll;
     }, 50); // Debounce time in milliseconds

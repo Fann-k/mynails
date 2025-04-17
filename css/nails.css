@@ -52,13 +52,13 @@ a {
   position: absolute;
   width: 100%;
   height: 300px;
-  background-color: rgb(226, 165, 180);
+  background-color: #c37a67;
   overflow-x: hidden;
   box-sizing: border-box;/* Include padding and border in width calculation */
 
     --s: 6px; /* control the size */ /*https://codepen.io/t_afif/pen/QWReqEx*/
     
-    --g: repeating-conic-gradient(#CAF6D4 0 25%,#7FC890 0 50%) 0/;
+    --g: repeating-conic-gradient(#f2b1a1 0 25%,#c37a67 0 50%) 0/;
     background:
       var(--g) calc(1*var(--s)) calc(7*var(--s)),
       var(--g) calc(2*var(--s)) calc(5*var(--s)),
@@ -304,7 +304,7 @@ p.text {
 /*M*/
 
 p2 {
-  color: rgb(4, 63, 26);
+  color: #842109;
   font-size: 50px;
   font-weight: bold;
   font-family: 'Times New Roman';
@@ -382,7 +382,7 @@ h3{
   left: 50%;
   transform: translate(-50%);
   padding: 10px 20px;
-  background-color: #CAF6D4;
+  background-color: #f2b1a1;
   color: rgb(208, 225, 245);
   text-decoration: none;
   border-radius: 5px;
@@ -406,7 +406,7 @@ h3{
 
 .nav-container2:hover {
 
-  background-color: rgb(121, 201, 143);
+  background-color: #f4a28d;
   cursor: pointer;
   transition: 1s;
 }
@@ -526,7 +526,7 @@ h3{
   align-items: center;
 }
 
-.step1 {
+/*.step1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -536,34 +536,33 @@ h3{
   width: 200px;
   height: 200px;
   object-fit: contain;
-}
+}*/
 
-/* Add media queries for kitty in prep page */
+/* Add media queries for kitty in prep page 
 @media screen and (max-width: 1200px) {
   .step1 img {
-    width: 100%; /* Changed from 100vw to 100% */
+    width: 100%;  Changed from 100vw to 100% 
   }
 }
-
+*/
 @media screen and (max-width: 768px) {
   .kitty {
     top: 880px;
   }
-  .step1 img {
+  /*.step1 img {
     width: 100%; /* Changed from 100vw to 100% */
-  }
+  }*/
   .maintext {
     width: 90%;
     font-size: 18px;
     line-height: 1.5;
   }
-}
 
 @media screen and (max-width: 480px) {
   .kitty {
     top: 980px;
   }
-  .step1 img {
+  /*.step1 img {
     width: 100%; /* Changed from 100vw to 100% */
   }
   .maintext {
@@ -572,7 +571,7 @@ h3{
     line-height: 1.5;
     padding: 0 10px;
   }
-}
+
 
 .kittyrow {
   position: relative;
@@ -657,59 +656,8 @@ h3{
   max-width: 800px;
 }
 
-.all1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  position: relative;
-  top: 580px;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 20px;
-}
 
-.all1 img {
-  width: 400px;
-  height: 300px;
-  object-fit: contain;
-}
 
-.all2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  position: relative;
-  top: 730px; /* Changed from 700px to 730px */ /*fix pixels/rems (br) no position w px*/
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.all2 img {
-  width: 300px;
-  height: 300px;
-  object-fit: contain;
-}
-
-/* Add media queries for different screen sizes */
-@media screen and (max-width: 1200px) {
-  .all2 img {
-    width: 25vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .all2 img {
-    width: 25vw;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .all2 img {
-    width: 25vw;
-  }
-}
 
 h2, h4 {
   font-size: 20px;
@@ -778,7 +726,7 @@ div.desc2 {
 div.desc3 {
   padding: 5px;
   text-align: center;
-  background-color: rgba(212, 69, 69, 0.807);
+  background-color: rgba(251, 118, 118, 0.703);
 }
 
 
@@ -791,18 +739,18 @@ div.desc4 {
 div.desc5 {
   padding: 5px;
   text-align: center;
-  background-color: rgb(237, 63, 153);
+  background-color: rgb(255, 172, 215);
 }
 div.desc6 {
   padding: 5px;
   text-align: center;
-  background-color: rgb(255, 139, 100);
+  background-color: rgb(255, 184, 160);
 }
 
 div.desc7 {
   padding: 5px;
   text-align: center;
-  background-color: rgb(87, 110, 255);
+  background-color: rgb(185, 194, 255);
 }
 
 div.desc8 {
@@ -1114,7 +1062,7 @@ div.gallery img {
     justify-content: center;
 
     --s: 6px;
-    --g: repeating-conic-gradient(#CAF6D4 0 25%,#7FC890 0 50%) 0/;
+    --g: repeating-conic-gradient(#f2b1a1 0 25%,#c37a67 0 50%) 0/;
     background:
         var(--g) calc(1*var(--s)) calc(7*var(--s)),
         var(--g) calc(2*var(--s)) calc(5*var(--s)),
@@ -1157,7 +1105,241 @@ div.gallery img {
     opacity: 1;
 }
 
+/*.vi-container {
+    display: flex;
+    flex-direction: column; /* Stack images vertically *
+    align-items: center; /* Center images horizontally (optional) *
+    position: absolute;
+    top: 500px;
+    left: 20%;
+    transform: translateX(-50%);
+    width: 70%;
+    gap: 30px; /* Add space between images *
+    
+}
+
+.vertical-image {
+    max-width: 50%; /* Ensure images don't overflow the container *
+    height: 50%; /* Maintain image aspect ratio *
+}*/
+
+
+div.gallery2 img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+div.desc11 {
+  padding: 5px;
+  text-align: center;
+  background-color:#ffcbbd;
+}
+
+div.desc22 {
+  padding: 5px;
+  text-align: center;
+  background-color: #ffcbbd;
+}
+
+div.desc33 {
+  padding: 5px;
+  text-align: center;
+  background-color: #ffcbbd;
+}
+
+div.desc44 {
+  padding: 5px;
+  text-align: center;
+  background-color: #ffcbbd;
+}
+
+div.desc55 {
+  padding: 5px;
+  text-align: center;
+  background-color: #ffcbbd;
+}
+div.desc66 {
+  padding: 5px;
+  text-align: center;
+  background-color: #ffcbbd;
+}
+
+div.desc77 {
+  padding: 5px;
+  text-align: center;
+  background-color: #ffcbbd;
+}
+
+div.desc88 {
+  padding: 5px;
+  text-align: center;
+  background-color:  #ffcbbd;
+}
+
+/* Update gallery container styles */
+.gallery-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 0;
+  padding: 0px;
+  position: absolute;
+  top: 400px; /* Restored from 350px to 400px */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+/* Remove duplicate gallery styles */
+/* Update gallery styles */
+div.gallery2 {
+  margin: 0;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+
+div.gallery2img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+  .gallery-container2 {
+    top: 400px;
+    width: 90%;
+  }
+  
+  div.gallery2 {
+    width: 300px;
+  }
+  
+  div.gallery2 img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.container4 {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: #d095a4;
+  overflow-x: hidden;
+  box-sizing: border-box;/* Include padding and border in width calculation */
+
+    --s: 6px; /* control the size */ /*https://codepen.io/t_afif/pen/QWReqEx*/
+    
+    --g: repeating-conic-gradient(#f7cad5 0 25%,#d095a4 0 50%) 0/;
+    background:
+      var(--g) calc(1*var(--s)) calc(7*var(--s)),
+      var(--g) calc(2*var(--s)) calc(5*var(--s)),
+      var(--g) calc(3*var(--s)) calc(3*var(--s)),
+      var(--g) calc(5*var(--s)) calc(2*var(--s)),
+      var(--g) calc(7*var(--s)) calc(1*var(--s));
+    background-blend-mode: lighten;
+
+  }
 
 
 
+.nav-container4 {
+  position: absolute;
+  top: 320px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px 20px;
+  background-color: #f7cad5;
+  color: rgb(208, 225, 245);
+  text-decoration: none;
+  border-radius: 5px;
+  pointer-events: auto;
+  font-size: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  z-index: 2;/*stacking apparently*/
+}
 
+.nav-container1 h4 {
+  display: inline-block;
+  position: relative;
+  margin-right: 25px;
+  margin-left: 25px;
+  white-space: nowrap;
+}
+
+.nav-container4:hover {
+
+  background-color: #e5afbd;
+  cursor: pointer;
+  transition: 1s;
+}
+
+p3 {
+  color: #69172c;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Times New Roman';
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
+  position: absolute;
+ /* outline: 5px dotted green;*/
+}
+
+p3.text{
+font-size: 40px;
+margin-top: 60px;;
+}
+
+.bottom-container4 {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(226, 165, 180);
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(43, 45, 148);
+  font-family: 'Times New Roman';
+  font-size: 5px;
+  font-weight: lighter;
+  padding: 0 20px;
+  white-space: nowrap;
+  overflow: hidden;
+
+  --s: 6px;
+  --g: repeating-conic-gradient(#f7cad5  0 25%,#d095a4 0 50%) 0/;
+  background:
+      var(--g) calc(1*var(--s)) calc(7*var(--s)),
+      var(--g) calc(2*var(--s)) calc(5*var(--s)),
+      var(--g) calc(3*var(--s)) calc(3*var(--s)),
+      var(--g) calc(5*var(--s)) calc(2*var(--s)),
+      var(--g) calc(7*var(--s)) calc(1*var(--s));
+  background-blend-mode: lighten;
+}
+
+.bottom-container4.visible {
+  opacity: 1;
+}
+
+.bottom-container4 p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

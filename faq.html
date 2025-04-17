@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!--this is bread-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>FAQ</title>
+	<link rel="stylesheet" href="css/nails.css" >
+
+
+</head>
+
+<body>
+  
+   
+<div class="container4">
+  <p3 class="text">FAQ</p3>
+</div>
+      
+<nav class="nav-container4">
+  <h3> <a href="index.html" class="button-link">HOME</a> </h3>
+  <h3> <a href="prep.html" class="button-link">PREP</a></h3> 
+  <h3>  <a href="base.html" class="button-link">INSPO</a></h3>
+  <h3>  <a href="faq.html" class="button-link">FAQ</a></h3>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bottom-container4"></div>
+
+<script>
+  const bottomContainer = document.querySelector('.bottom-container4');
+  let isVisible = false;
+  let scrollTimeout;
+  let lastScrollTop = 0;
+  
+  window.addEventListener('scroll', () => {
+    clearTimeout(scrollTimeout);
+    
+    scrollTimeout = setTimeout(() => {
+      const scrollPosition = window.innerHeight + window.scrollY;
+      const documentHeight = document.body.offsetHeight;
+      const threshold = 100; // pixels from bottom to trigger the transition
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      
+      // Check if scrolling down and near bottom
+      if (currentScroll > lastScrollTop && scrollPosition >= documentHeight - threshold) {
+        bottomContainer.classList.add('visible');
+        isVisible = true;
+      } else {
+        bottomContainer.classList.remove('visible');
+        isVisible = false;
+      }
+      
+      lastScrollTop = currentScroll;
+    }, 50); // Debounce time in milliseconds
+  });
+</script>
+
+
+</body>
+</html>
