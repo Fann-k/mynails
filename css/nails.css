@@ -459,7 +459,7 @@ h3{
   gap: 20px;
 }
 
-.maintext {
+/*.maintext {
     font-size: 70px;
     font-weight: normal;
     color: rgb(65, 68, 198);
@@ -509,7 +509,7 @@ h3{
         max-width: 200px;
     }
 }
-
+*/
 .kittyy {
   position: absolute;
   top: 420px;
@@ -558,7 +558,7 @@ h3{
   }
 }
 
-.kittyrow {
+/* {
   position: relative;
   top: 600px;
   left: 50%;
@@ -586,10 +586,10 @@ h3{
   margin: 0 auto;
 }
 
-/* Update media queries for different screen sizes */
+/* Update media queries for different screen sizes *
 @media screen and (max-width: 1200px) {
   .column img {
-    width: 100%; /* Changed from 100vw to 100% */
+    width: 100%; /* Changed from 100vw to 100% *
   }
 }
 
@@ -600,7 +600,7 @@ h3{
     gap: 10px;
   }
   .column img {
-    width: 100%; /* Changed from 100vw to 100% */
+    width: 100%; /* Changed from 100vw to 100% *
   }
 }
 
@@ -611,11 +611,12 @@ h3{
     gap: 10px;
   }
   .column img {
-    width: 100%; /* Changed from 100vw to 100% */
+    width: 100%; /* Changed from 100vw to 100% *
   }
 }
+*/
 
-.maintext2 {
+/*.maintext2 {
   font-size: 20px;
   font-weight: lighter;
   color: rgb(65, 68, 198);
@@ -640,7 +641,7 @@ h3{
   width: 80%;
   max-width: 800px;
 }
-
+*/
 
 
 
@@ -664,12 +665,12 @@ h4 {
   top: 1750px;
 }
 
-.maintext4 {
+/*.maintext4 {
   font-size: 20px;
   font-weight: lighter;
   color: rgb(65, 68, 198);
   position: absolute;
-  top: 830px; /* Changed from 800px to 830px */
+  top: 830px; /* Changed from 800px to 830px *
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -682,14 +683,14 @@ h4 {
   font-weight: lighter;
   color: rgb(65, 68, 198);
   position: absolute;
-  top: 1030px; /* Changed from 1000px to 1030px */
+  top: 1030px; /* Changed from 1000px to 1030px *
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   width: 80%;
   max-width: 800px;
 }
-
+*/
 div.gallery img {
   width: 300px;
   height: 300px;
@@ -865,11 +866,11 @@ div.gallery img {
     padding: 0 10px;
   }
 
-  .kittyrow {
+  /*.kittyrow {
     top: 450px;
     flex-direction: column;
     gap: 10px;
-  }
+  }*/
 }
 /*
 .carousel {
@@ -948,7 +949,7 @@ div.gallery img {
 }
 */
 
-.kitty-gif {
+/*.kitty-gif {
   position: relative;
   top: 180px;
   left: 10%;
@@ -975,7 +976,7 @@ div.gallery img {
     max-width: 200px;
   }
 }
-
+*/
 /* Bottom Container Styles */
 .bottom-container {
     position: fixed;
