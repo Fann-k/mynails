@@ -460,59 +460,54 @@ h3{
 }
 
 .maintext {
-  font-size: 70px;
-  font-weight: normal;
-  color: rgb(65, 68, 198);
-  position: absolute;
-  top: 400px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  width: 80%;
-  max-width: 800px;
-  z-index: 3;
+    font-size: 70px;
+    font-weight: normal;
+    color: rgb(65, 68, 198);
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 100px auto 40px auto;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.gif-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
 }
 
 .kitty-gif {
-  position: absolute;
-  top: 500px;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 300px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  z-index: 2;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
-  .maintext {
-    top: 360px;
-    width: 90%;
-    font-size: 18px;
-    line-height: 1.5;
-  }
+    .gif-container {
+        max-width: 250px;
+        margin: 30px auto;
+    }
 
-  .kitty-gif {
-    top: 460px;
-    max-width: 250px;
-  }
+    .kitty-gif {
+        max-width: 250px;
+    }
 }
 
 @media screen and (max-width: 480px) {
-  .maintext {
-    top: 360px;
-    width: 90%;
-    font-size: 16px;
-    line-height: 1.5;
-    padding: 0 10px;
-  }
+    .gif-container {
+        max-width: 200px;
+        margin: 30px auto;
+    }
 
-  .kitty-gif {
-    top: 460px;
-    max-width: 200px;
-  }
+    .kitty-gif {
+        max-width: 200px;
+    }
 }
 
 .kitty {
