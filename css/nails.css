@@ -460,8 +460,8 @@ h3{
 }
 
 .maintext {
-  font-size: 20px;
-  font-weight: lighter;
+  font-size: 70px;
+  font-weight: normal;
   color: rgb(65, 68, 198);
   position: absolute;
   top: 400px;
@@ -824,7 +824,7 @@ div.gallery img {
   }
 
   .gallery-container {
-    top: 360px;
+    top: 400px;
     width: 95%;
     margin-top: 0;
   }
@@ -869,7 +869,7 @@ div.gallery img {
   }
 
   .gallery-container {
-    top: 360px;
+    top: 400px;
     width: 100%;
     margin-top: 0;
   }
