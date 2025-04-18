@@ -510,28 +510,21 @@ h3{
     }
 }
 
-.kitty {
+.kittyy {
   position: absolute;
-  top: 680px;
+  top: 420px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
-/*.step1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.kittyy img {
+  max-width: 100%;
+  height: auto;
 }
-
-.step1 img {
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
-}*/
 
 /* Add media queries for kitty in prep page 
 @media screen and (max-width: 1200px) {
@@ -541,32 +534,29 @@ h3{
 }
 */
 @media screen and (max-width: 768px) {
-  .kitty {
-    top: 880px;
+  .kittyy {
+    top: 550px;
   }
-  /*.step1 img {
-    width: 100%; /* Changed from 100vw to 100% */
-  }*/
-  .maintext {
+  
+  .welcome {
     width: 90%;
     font-size: 18px;
     line-height: 1.5;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  .kitty {
-    top: 980px;
+  .kittyy {
+    top: 580px;
   }
-  /*.step1 img {
-    width: 100%; /* Changed from 100vw to 100% */
-  }
-  .maintext {
+  
+  .welcome {
     width: 90%;
     font-size: 16px;
     line-height: 1.5;
     padding: 0 10px;
+  }
 }
-
 
 .kittyrow {
   position: relative;
@@ -706,51 +696,41 @@ div.gallery img {
   object-fit: cover;
 }
 
-div.desc1 {
+div.desc1, div.desc2, div.desc3, div.desc4, div.desc5, div.desc6, div.desc7, div.desc8 {
   padding: 5px;
   text-align: center;
+  font-family: Arial;
+}
+
+div.desc1 {
   background-color: rgb(206, 245, 207);
 }
 
 div.desc2 {
-  padding: 5px;
-  text-align: center;
   background-color: rgb(255, 195, 195);
 }
 
 div.desc3 {
-  padding: 5px;
-  text-align: center;
   background-color: rgba(251, 118, 118, 0.703);
 }
 
-
 div.desc4 {
-  padding: 5px;
-  text-align: center;
   background-color: rgb(236, 195, 255);
 }
 
 div.desc5 {
-  padding: 5px;
-  text-align: center;
   background-color: rgb(255, 172, 215);
 }
+
 div.desc6 {
-  padding: 5px;
-  text-align: center;
   background-color: rgb(255, 184, 160);
 }
 
 div.desc7 {
-  padding: 5px;
-  text-align: center;
   background-color: rgb(185, 194, 255);
 }
 
 div.desc8 {
-  padding: 5px;
-  text-align: center;
   background-color: rgb(255, 225, 214);
 }
 
@@ -1125,51 +1105,42 @@ div.gallery2 img {
   object-fit: cover;
 }
 
-div.desc11 {
+div.desc11, div.desc22, div.desc33, div.desc44, div.desc55, div.desc66, div.desc77, div.desc88 {
   padding: 5px;
   text-align: center;
-  background-color:#ffcbbd;
+  background-color: #ffcbbd;
+  font-family: Arial;
+}
+
+div.desc11 {
+  background-color: rgb(206, 245, 207);
 }
 
 div.desc22 {
-  padding: 5px;
-  text-align: center;
-  background-color: #ffcbbd;
+  background-color: rgb(255, 195, 195);
 }
 
 div.desc33 {
-  padding: 5px;
-  text-align: center;
-  background-color: #ffcbbd;
+  background-color: rgba(251, 118, 118, 0.703);
 }
 
 div.desc44 {
-  padding: 5px;
-  text-align: center;
-  background-color: #ffcbbd;
+  background-color: rgb(236, 195, 255);
 }
 
 div.desc55 {
-  padding: 5px;
-  text-align: center;
-  background-color: #ffcbbd;
+  background-color: rgb(255, 172, 215);
 }
 div.desc66 {
-  padding: 5px;
-  text-align: center;
-  background-color: #ffcbbd;
+  background-color: rgb(255, 184, 160);
 }
 
 div.desc77 {
-  padding: 5px;
-  text-align: center;
-  background-color: #ffcbbd;
+  background-color: rgb(185, 194, 255);
 }
 
 div.desc88 {
-  padding: 5px;
-  text-align: center;
-  background-color:  #ffcbbd;
+  background-color: rgb(255, 225, 214);
 }
 
 /* Update gallery container styles */
@@ -1343,6 +1314,7 @@ h5, h6, h7, h8, h9 {
     color: rgb(65, 68, 198);
     margin: 0 0 10px 0;
     text-align: center;
+    font-family: Arial;
 }
 
 p4, p5, p6, p7, p8 {
@@ -1352,6 +1324,7 @@ p4, p5, p6, p7, p8 {
     margin: 0;
     text-align: center;
     line-height: 1.5;
+    font-family: Arial;
 }
 
 .faq-grid {
@@ -1361,6 +1334,7 @@ p4, p5, p6, p7, p8 {
     margin: 100px auto 80px auto;
     max-width: 800px;
     padding: 0 20px;
+    font-family: Arial;
 }
 
 .faq-item {
@@ -1383,6 +1357,35 @@ p4, p5, p6, p7, p8 {
     .faq-grid {
         gap: 40px;
         margin: 100px auto 80px auto;
+        padding: 0 10px;
+    }
+}
+
+.welcome {
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: lighter;
+    color: rgb(65, 68, 198);
+    text-align: center;
+    line-height: 1.5;
+    width: 80%;
+    max-width: 800px;
+    margin: 80px auto 0 auto;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .welcome {
+        width: 90%;
+        margin: 80px auto 0 auto;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .welcome {
+        width: 90%;
+        margin: 80px auto 0 auto;
         padding: 0 10px;
     }
 }
